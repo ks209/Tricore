@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricore Revenue</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./init.css">
+    <link rel="shortcut icon" href="./assets/images/logo-tcr.png" type="image/x-icon">
+</head>
+<body>
+    <div class="cursor">
+
+    </div>
+    <main>
+        <div id="page1">
+            <nav>
+                <img src="./assets/images/logo-tcr.png" alt="logo">
+                <div id="nav2">
+                    <a href="./index.html">Home</a>
+                    <a href="./work.html">Work</a>
+                    <a href="./services.html">Services</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+                <div id="nav3">
+                    <div id="circle">
+                    </div>
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+            
+        </div>
+        <div id="form">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d686.7339084931748!2d77.1054009005447!3d28.710140150731338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d013c7cd52a2f%3A0xf126a568a7edab3!2sA%20-%201%20Apartments%20(Back%20Gate)!5e0!3m2!1sen!2sin!4v1703398442645!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form name="submit-to-google-sheet">
+                <h1>Start A Project</h1>
+                <p>One of the leading digital marketing agency in Delhi.Write to us about any doubts, We would be glad to discuss your business targets and how we can achieve them through our digital marketing services in</p>
+                
+                  <input type="text" id="fullname" name="fullname" placeholder="NAME" required>
+                
+                  <input type="email" id="email" name="email" placeholder="EMAIL" required>
+                
+                
+                  <input type="tel" id="phone" name="phone" placeholder="Phone No." required>
+                
+                
+                  <textarea id="message" name="message" rows="4" placeholder="Enter Your Message" required></textarea>
+                
+                
+                  <input type="submit" value="Submit">
+                
+                <p id="msg">Message Sent Successfully. Our Team will Contact you soon</p>
+              </form>
+        </div>
+        <footer class="footer">
+            <div id="footer-left">
+                <img src="./assets/images/logo-tcr.png" alt="logo">
+                <h4>
+                    As the leader of Tricore Revenue's dynamic marketing team, we thrive on innovation and creativity. Our unwavering commitment to tangible results is evident as we seamlessly combine data-driven strategies with cutting-edge marketing techniques. Our expert team passionately crafts compelling campaigns, enhancing brand visibility and delivering measurable ROI for our clients. At Tricore Revenue, our dedication to client success and forward-thinking approach sets us apart in the competitive marketing landscape.
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </h4>
+            </div>
+            <div id="footer-middle">
+                <div id="middle-links">
+                    <a href="./index.html">Home</a>
+                    <a href="./">Work</a>
+                    <a href="./services.html">Services</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </div>
+            <div id="footer-right">
+                <div id="right1">
+                <h3>Contact Us</h3>
+                <h4>+91 80768 95027</h4>
+                <h4>+91 78381 34720</h4>
+                <br>
+                <a href="maitto:contact@gmail.com"><i class="ri-mail-send-fill"></i></a>
+                <br>
+                </div>
+                <div id="right2">
+                    <br>
+                    <a href="https://www.instagram.com/tricorerevenue.digitals?igsh=MTB2NmJqMW5oMjh2OQ"><i class="ri-instagram-fill"></i></a>
+                    <a href="https://youtube.com/@TRI-COREREVENUE?si=C0B6rB-AQpRm1F3P"><i class="ri-youtube-fill"></i></a>
+                    <a href="https://wa.me/+918076895027"><i class="ri-whatsapp-fill"></i></a>
+                    <a href="https://www.linkedin.com/company/tri-core-revenue/"><i class="ri-linkedin-box-fill"></i></a>
+                </div>
+            </div>
+          </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./init.js"></script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyhgqDlkxWK-vMSaolk6NeVljjVXL44ZtCm1QIs-xuTR7uRZzOJgi1xZDurrkvqjyYoWQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+            console.log('Success!', response)
+            msg.style.display = "block";
+
+            setTimeout(function() {
+            msg.style.display = "none";
+            }, 5000);})
+
+            .catch(error => console.error('Error!', error.message))
+        })
+
+
+        const iframe = document.querySelector("iframe");
+
+        iframe.addEventListener("hover", function(){
+            console.log("hi")
+            iframe.style.pointerEvents = "all";
+        })
+      </script>
+</body>
+</html>
