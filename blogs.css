@@ -28,9 +28,10 @@
 }
 
 #blog-content-child h3{
-    height: 20vw;
+    height: 16vw;
     overflow: hidden;
     font-weight: 300;
+    font-size: 1vw;
 }
 
 #blog-right{
