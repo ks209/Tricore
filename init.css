@@ -240,9 +240,9 @@ i:hover{
     
     footer{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
-        padding: 4vw;
+        padding: 2vw;
         padding-bottom: 6vh;
     }
     
@@ -262,23 +262,30 @@ i:hover{
     }
     
     #footer-right{
-        width: 40%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     #footer-middle{
         width: 15%;
-        display: flex;
         flex-direction: row;
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
     }
     
     #middle-links{
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
+        justify-content: c;
     }
     
     #middle-links a{
         text-decoration: none;
-        font-size: 6vw;
+        font-size: 3vw;
         transition: 0.5s;
     }
     
